@@ -1,3 +1,4 @@
+import Button from "./button";
 import Copy from "./copy";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
                 <Copy>
                     <p>Memory Drop lets you send vibes, secrets, or goals to yourself, delivered exactly when you want. Craft your message, pick a date, and let it hit your inbox like a perfectly timed beat.</p>
                 </Copy>
+                <Button />
             </div>
         </div>
     )

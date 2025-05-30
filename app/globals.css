@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Canela';
+  src: url('/CanelaText-Thin-Trial.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
 body{
   background-color: #F6F1EB;
   font-family: 'sora', serif;
@@ -23,22 +30,62 @@ a{
   flex-direction: column;
   height: 80vh;
 }
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background-color: #fff;  
+  color: #000;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000; 
+  border-radius: 50%;
+  left: 14px;
+  z-index: -1;
+  transform-origin: center;
+}
+
+.title p {
+  margin: 0;
+  letter-spacing: 0.8px;
+  transition: color 0.3s ease;
+  z-index: 2;
+}
+
+.size {
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
 
 .home h1:nth-child(1) {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Canela', serif;
   font-weight: 300; 
   font-size: 220px;
-  font-style: italic;
   align-self: flex-start;
   position: relative;
   top: -170px;
   height: max-content;
 }
 .home h1:nth-child(2) {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Canela', sans-serif;
   font-weight: 300; 
   font-size: 220px;
-  font-style: italic;
   align-self: flex-end;
   position: relative;
   top: -570px;
@@ -50,7 +97,7 @@ a{
   width: 50%;
   position: relative;
   font-weight: lighter;
-  top: -900px;
+  top: -950px;
   left: 55px;
 }
 ::view-transition {
