@@ -32,9 +32,11 @@ a {
 .home {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 90vh;
 }
-
+.about{
+  height: 95vh;
+}
 .button {
   position: relative;
   display: inline-flex;
@@ -157,6 +159,34 @@ a {
 
 .text.play .block:last-child {
   transform: translateY(0);
+}
+
+.images {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.image {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  will-change: transform;
+  transform: scale(1); /* Add this */
+}
+
+.image:hover .img {
+  transform: scale(1.1);
 }
 
 ::view-transition {
